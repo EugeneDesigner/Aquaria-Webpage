@@ -18,7 +18,7 @@ var banner = ['/*!\n',
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
-    return gulp.src('less/grayscale.less')
+    return gulp.src('less/aquaria.less')
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
@@ -29,7 +29,7 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/grayscale.css')
+    return gulp.src('css/aquaria.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
@@ -37,10 +37,19 @@ gulp.task('minify-css', ['less'], function() {
             stream: true
         }))
 });
-
+/**
+ gulp.task('minify-bootstrap', function() {
+  return gulp.src('vendor/bootstrap/css/bootstrap.css')
+      .pipe(rename({ suffix: '.min'}))
+      .pipe(gulp.dest('vendor/bootstrap/css'))
+      .pipe(browserSync.reload({
+          stream: true
+    }))
+});
+*/
 // Minify JS
 gulp.task('minify-js', function() {
-    return gulp.src('js/grayscale.js')
+    return gulp.src('js/aquaria.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
@@ -86,6 +95,7 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
+    gulp.watch('vendor/bootstrap/css/bootstrap.css', ['minify-bootstrap']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);

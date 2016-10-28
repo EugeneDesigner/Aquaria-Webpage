@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Aquaria vattenmuseum</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,9 +22,7 @@
     <!-- Theme CSS -->
     <link href="css/aquaria.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+      <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -38,29 +36,32 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
+                   <i class="fa fa-bars fa-2x"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap
+                    <img src="../img/aquaria-logo.png" alt="aquaria logo" height="100%" >
                 </a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#info">Inför besöket</a>
+                    </li>
+                    <li >
+                        <a class="page-scroll" href="#aventyret">Äventyret</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#opentime">Öppetider/Priset</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Kontakt</a>
                     </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -74,10 +75,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
-                        <p class="intro-text">A free, responsive, one page Bootstrap theme.
-                            <br>Created by Start Bootstrap.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <h5 class="brand-heading">Aquaria Vattenmuseum</h5>
+                        <p class="intro-text">
+                              Följ med på en upptäcktsfärd genom
+                              fuktig regnskog, tropiska hav och
+                              färgsprakande korallrev.</p>
+                        <a href="#info" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -86,61 +89,168 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <!-- Info Section -->
+    <section id="info" class="container content-section text-center info">
+        <div class="row info_columns">
+
+            <div class="col-xs-12 col-md-4">
+              <img class="start-icon"  src="../img/map.svg">
+                <h2>Hitta hit</h2>
+                <p>Aquaria ligger precis till vänster vid bryggan där Djurgårdsfärjan från Slussen lägger till.
+                  Du kan även åka spårvagn nummer 7 eller buss 44 och hoppa av vid hållplats Liljevalchs/Gröna Lund.</p>
+            <div id="map"></div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <img class="start-icon" src="../img/coffee.svg">
+                <h2>Kafe</h2>
+                <p>Aquarias café är den självklara avslutningen på ett besök hos oss. Förutom en lätt lunch kan du avnjuta en buffé med olika bakverk och en av Stockholms vackraste utsikter!
+                  Sommartid har vår uteservering öppet, där du sitter så nära vattnet att du kan doppa fötterna!</p>
+                <img class="image-below" src="../img/kafe.jpg">
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <img class="start-icon"  src="../img/guide.svg">
+                <h2>Guide</h2>
+                <p>Vill du ha ut lite extra av ditt besök hos oss ska du boka en guide. Våra guider anpassar visningen särskilt för din grupp.
+                  Tillsammans går gruppen genom museets olika avdelningar, vi visar och berättar om miljöerna och djuren vi stöter på.
+                  Guiden har även med sig mat till fiskarna för att vi ska komma dem så nära som möjligt.</p>
+            </div>
+        </div>
+    </section>
+
+      <!-- Rainforest Section -->
+    <section id="aventyret" class="container content-section text-center rainforest">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                    <h1>Regnskog</h1>
+                <div class="col-lg-6 col-sm-8">
+                    <p class="description-prime">Börja din resa i den levande sydamerikanska regnskogen.
+                      Känns det <span class="highlighted rainforest_orange">varmt</span>? Inte så konstigt, här är luftfuktigheten hög och temperaturen
+                      ligger på <span class="highlighted rainforest_red">+28</span>grader, precis som i
+                      en riktig regnskog.</p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-7">
+              <p class="description-secondary"> I den mörka floden simmar ett stim pirayor bland jättemalar och taggiga stingrockor.
+                På land möts du av märkliga paddor och vackra pilgiftsgrodor.
+                Plötsligt faller natten, och med den bryter ett kraftigt åskväder ut. </p>
             </div>
-        </div>
+            <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-6 description-know">
+              <h4>Visst du att...</h4>
+              <p>… det regnar så gott som dagligen i dessa skogar och på ett år
+              kan det komma mer än <span class="highlighted rainforest_meter">8m</span> regn! </p>
+          </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
+    <!--Tropic Section -->
+    <section id="aventyret" class="container content-section tropic">
+      <div class="row">
+        <h1>Tropiska hav</h1>
+        <div class="col-lg-6 col-sm-8 col-xs-12 description-prime">I vårt största akvarium på <span class="highlighted tropic-liters">80 000 liter</span> vatten bor det
+                              många spännande och fascinerande fiskar. Muränan kan man oftast
+                              skymta i sin grotta, medans våra komulerockor nyfiket simmar förbi
+                              vid rutan. Andra spännande figurer som man kan se är clownfisken i
+                              sin annemon, igelkottfiskar, languster och vimpelfiskar.
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-8 col-sm-6 col-sm-offset-6 col-xs-12 description-know">
+              <h4>Nyhet!</h4>
+              <p>Maneter har flyttat in hos oss. Nu kan ni öronmaneten som ni kan träffa på i
+                våra kallare vatten och en tropisk art som kallas för Prickig lagunmanet.</p>
             </div>
         </div>
-    </section>
 
+    </section>
+    <!--Nordic Section -->
+    <section id="aventyret" class="container content-section nordic">
+      <div class="row">
+        <h1>Nordisk Miljö</h1>
+        <div class="col-lg-6 col-lg-offset-6 col-md-8 col-sm-12 description-prime">Välkommen tillbaka till det lite svalare Norden igen.
+          I bergsjöns svala vatten trivs ett stim av röding och i den virvlande forsen simmar havsöring.
+          Upptäck också hur mycket liv det finns i en typisk svensk sjö,
+          som till exempel elritsor och kräftor.</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6  description-know">
+          <h4>Visst du att...</h4>
+          <p>…en liter öringsrom innehåller <span class="highlighted nordic-romkorn">6-8000</span> romkorn och kan befruktas
+          med motsvarande ett knappnålshuvud med mjölke.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Opentime Section -->
+    <section id="opentime" class="container content-section opentime">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h3>Enterpriset</h3>
+          <ul class="list-group">
+            <li class="list-group-item"><span class="ticket_category">Vuxna</span> &#58; 100kr</li>
+            <li class="list-group-item"><span class="ticket_category">Barn 3-15 år</span> &#58; 60kr</li>
+            <li class="list-group-item"><span class="ticket_category">Ledsagare</span> &#58; Fritt inträde</li>
+            <li class="list-group-item"><span class="ticket_category">Pensionär (tis-fre)</span> &#58; 80kr</li>
+            <li class="list-group-item"><span class="ticket_category">Grupper</span> &#58; Är ni 10 personer eller fler i er grupp får ni 10% grupprabatt på entrén vid kort- eller kontantbetalning.</li>
+            <li class="list-group-item"><span class="ticket_category">Entré skolgrupper</span> - Pris per person (både elev och pedagog)
+                        <ul class="list-group secondary">
+                          <li class="list-group-item"><span class="ticket_category">Förskola</span> &#58; 30 kr</li>
+                          <li class="list-group-item"><span class="ticket_category">Grundskola/6-årsverksamhet</span> &#58; 45 kr</li>
+                          <li class="list-group-item"><span class="ticket_category">Gymnasie- o övriga skolgrupper</span> &#58; 65 kr</li>
+                        </ul>
+            </li>
+            <li class="list-group-item ticket-button"> <a  type="button" href="https://webbshop.aquaria.se/" class="btn btn-default">Köp biljett här</a></li>
+          </ul>
+
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h3 class="timetable">Öppetider</h3>
+          <p>tis-sön 10.00-16.30</p>
+          <p>MÅNDAGAR STÄNGT</p>
+        </div>
+      </div>
+    </section>
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
+    <section id="contact" class="container content-section contact">
+      <div class="row">
+        <div class="col-lg-4">
+          <h6>Bokning</h6>
+          <p>Epost: <a href="mailto:info@parksandresorts.com">info@parksandresorts.com</a></p>
+          <p>Tel: <a href="tel:010-708 7000">010-708 7000</a></p>
+          <p>Telefontid:</p>
+          <p>Måndag- Fredag 8.30-17.00</p>
         </div>
+        <div class="col-lg-4">
+          <h6>Huvudkontor</h6>
+          <p>Epost: <a href="mailto:info@aquaria.se">info@aquaria.se</a></p>
+          <p>Tel: <a href="tel:010-708 72 00">010-708 72 00</a></p>
+          <p>Telefontid för växeln:</p>
+          <p>Alla dagar: 9.00-16.30</p>
+          <p>(Lunchstängt mellan 12.30-13.30).</p>
+
+        </div>
+        <div class="col-lg-4">
+          <h6>Simma med oss på Facebook</h6>
+          <p>Gå till <a target="_blank" href="https://www.facebook.com/Aquariavattenmuseum">vara sida</a></p>
+
+        </div>
+      </div>
+    </section>
+    <!-- Sponsor Section -->
+    <section class="container content-section sponsors">
+      <div class="list-group">
+        <a target="_blank" href="http://www.parks-resorts.com/" class="list-group-item"><img src="../img/partner1.gif"></a>
+        <a target="_blank" href="http://www.furuvik.se/" class="list-group-item"><img src="../img/partner2.gif"></a>
+        <a target="_blank" href="http://www.kolmarden.com/" class="list-group-item"><img src="../img/partner3.gif"></a>
+        <a target="_blank" href="http://www.gronalund.com/" class="list-group-item"><img src="../img/partner4.png"></a>
+        <a target="_blank" href="http://www.sommarland.se/" class="list-group-item"><img src="../img/partner5.gif"></a>
+      </div>
     </section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+            <p>Copyright &copy; Aquaria Vattenmuseum 2016</p>
         </div>
     </footer>
 
@@ -154,10 +264,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtexiidMmZKlYEu8IcMR03RxyIzYd5-A4&sensor=false"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/grayscale.min.js"></script>
+    <script src="js/aquaria.min.js"></script>
 
 </body>
 
