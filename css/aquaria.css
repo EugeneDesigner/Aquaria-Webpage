@@ -35,6 +35,15 @@
   background-color: transparent;
   color: #CCC3FF;
 }
+.navbar-custom .nav li.active {
+  outline: none;
+}
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-custom .nav li.active a:hover {
+  color: #fff;
+}
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
@@ -42,6 +51,11 @@
     letter-spacing: 1px;
     background: transparent;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: rgba(1, 98, 151, 0.9);
+    border-bottom: 1px solid rgba(1, 98, 151, 0.3);
   }
 }
 .intro {
@@ -363,6 +377,9 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: #1d9b6c;
+}
+.light {
+  font-weight: 400;
 }
 .row {
   margin-top: 15px;
