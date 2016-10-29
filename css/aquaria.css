@@ -1,34 +1,25 @@
-/*!
- * Start Bootstrap - Aquaria v ()
- * Copyright 2013-2016 Eugene Yaroshenko
- * Licensed under MIT ()
- */
 .navbar-custom {
   margin-bottom: 0;
   margin: 0 auto;
   border-bottom: 1px solid rgba(1, 98, 151, 0.3);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .navbar-custom .navbar-toggle {
-  color: white;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
   outline: none;
-  color: black;
-}
-.navbar-custom .navbar-brand {
-  font-weight: 700;
+  color: #000;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
-  color: black;
 }
 .navbar-custom a {
-  color: white;
+  color: #fff;
 }
 .navbar-custom .nav li a {
   transition: background 0.3s ease-in-out;
@@ -44,15 +35,6 @@
   background-color: transparent;
   color: #CCC3FF;
 }
-.navbar-custom .nav li.active {
-  outline: none;
-}
-.navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.navbar-custom .nav li.active a:hover {
-  color: white;
-}
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
@@ -61,22 +43,17 @@
     background: transparent;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
-  .navbar-custom.top-nav-collapse {
-    padding: 0;
-    background: rgba(1, 98, 151, 0.9);
-    border-bottom: 1px solid rgba(1, 98, 151, 0.3);
-  }
 }
 .intro {
   display: table;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   width: 100%;
   height: auto;
   padding: 30% 0;
   text-align: center;
-  color: white;
-  background: url(../img/intro.jpg) no-repeat bottom center scroll;
+  color: #fff;
+  background: url(../img/backgrounds/intro.jpg) no-repeat bottom center scroll;
   background-color: #fff;
   background-size: cover;
 }
@@ -112,10 +89,10 @@
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 100% !important;
   font-size: 40px;
-  color: white;
+  color: #fff;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -124,7 +101,7 @@
 .btn-circle:hover,
 .btn-circle:focus {
   outline: none;
-  color: white;
+  color: #fff;
   background: rgba(255, 255, 255, 0.1);
 }
 .btn-circle i.animated {
@@ -174,6 +151,15 @@
 .content-section {
   margin: 0 auto;
   min-height: 700px;
+  padding: 50px 20px;
+  color: #fff;
+  max-width: 1500px;
+}
+[class*="highlighted"] {
+  padding: 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+  font-size: .8em;
 }
 .info {
   padding-top: 80px;
@@ -184,8 +170,6 @@
   margin-bottom: 100px;
 }
 .info [class^='col'] p {
-  color: #fff;
-  font-size: 1em;
   line-height: 1.8em;
   text-align: justify;
   max-width: 500px;
@@ -201,17 +185,15 @@
   max-width: 500px;
   margin: 20px auto;
 }
-.rainforest {
-  padding: 50px 20px;
-  color: white;
-  background: linear-gradient(rgba(55, 97, 9, 0.6), rgba(55, 97, 9, 0.6)), url(../img/aquaria.jpg) no-repeat center center scroll;
-  background-color: black;
-  background-size: cover;
+#map {
+  margin: 20px auto;
+  height: 400px;
+  max-width: 500px;
+  background-color: #fff;
 }
-[class*="highlighted"] {
-  padding: 4px;
-  border-radius: 4px;
-  margin: 0 2px;
+.rainforest {
+  background: linear-gradient(rgba(55, 97, 9, 0.6), rgba(55, 97, 9, 0.6)), url(../img/backgrounds/aquaria.jpg) no-repeat center center scroll;
+  background-size: cover;
 }
 .rainforest_red {
   background-color: rgba(255, 0, 0, 0.7);
@@ -239,45 +221,22 @@
 }
 .description-know p {
   text-align: justify;
-  font-size: 1em;
-  line-height: 1.7em;
 }
 .description-know p .rainforest_meter {
-  background: white;
-  color: black;
+  background: #fff;
+  color: #000;
 }
 .tropic {
-  background: linear-gradient(rgba(26, 128, 233, 0.7), rgba(26, 128, 233, 0.7)), url(../img/shark.jpg) no-repeat center center scroll;
-  background-color: black;
+  background: linear-gradient(rgba(26, 128, 233, 0.7), rgba(26, 128, 233, 0.7)), url(../img/backgrounds/shark.jpg) no-repeat center center scroll;
   background-size: cover;
-  color: #fff;
-  padding: 50px 20px;
 }
 .tropic-liters {
   background-color: black;
 }
-.nordic {
-  background: linear-gradient(rgba(101, 101, 101, 0.7), rgba(101, 101, 101, 0.7)), url(../img/north.jpg) no-repeat center center scroll;
-  background-size: cover;
-  background-color: #210b85;
-  color: #fff;
-  padding: 50px 20px;
-}
-.nordic h1 {
-  text-align: right;
-  padding: 30px;
-}
-.nordic .description-know {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.nordic-romkorn {
-  background-color: #fff;
-  color: #000;
-}
 .opentime {
   background-color: #313131;
-  color: #fff;
-  padding: 100px 20px 0;
+  padding-top: 100px;
+  padding-bottom: 0;
 }
 .opentime h3 {
   display: inline-block;
@@ -315,10 +274,26 @@
   padding: 5px;
   border-radius: 2px;
 }
+.nordic {
+  background: linear-gradient(rgba(101, 101, 101, 0.7), rgba(101, 101, 101, 0.7)), url(../img/backgrounds/north.jpg) no-repeat center center scroll;
+  background-size: cover;
+  background-color: #210b85;
+}
+.nordic h1 {
+  text-align: right;
+  padding: 30px;
+}
+.nordic .description-know {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nordic-romkorn {
+  background-color: #fff;
+  color: #000;
+}
 .contact {
   background-color: #DEDEDE;
   min-height: 200px;
-  padding-top: 50px;
+  color: #000;
 }
 .contact p {
   font-size: .8em;
@@ -369,13 +344,12 @@ h6 {
 }
 p {
   margin: 0 0 15px;
-  font-size: 1em;
+  font-size: 1  em;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
   p {
     margin: 0 0 25px;
-    font-size: 1.3em;
     line-height: 1.6;
   }
 }
@@ -389,9 +363,6 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: #1d9b6c;
-}
-.light {
-  font-weight: 400;
 }
 .row {
   margin-top: 15px;
@@ -418,53 +389,4 @@ a:focus {
   outline: none;
   color: black;
   background-color: #42DCA3;
-}
-ul.banner-social-buttons {
-  margin-top: 0;
-}
-@media (max-width: 1199px) {
-  ul.banner-social-buttons {
-    margin-top: 15px;
-  }
-}
-@media (max-width: 767px) {
-  ul.banner-social-buttons li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons li:last-child {
-    margin-bottom: 0;
-  }
-}
-footer {
-  padding: 50px 0;
-}
-footer p {
-  margin: 0;
-}
-::-moz-selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
-}
-::selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
-}
-img::selection {
-  background: transparent;
-}
-img::-moz-selection {
-  background: transparent;
-}
-body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-}
-#map {
-  margin: 20px auto;
-  height: 400px;
-  max-width: 500px;
-  background-color: white;
 }

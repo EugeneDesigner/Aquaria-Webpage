@@ -3,33 +3,33 @@
     margin: 0 auto;
     border-bottom: 1px solid fade(#016297, 30%);
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: black;
+    background-color: fade(#000, 40%);
     .navbar-toggle {
-        color: white;
-        background-color: fade(white, 20%);
+        color: #fff;
+        background-color: fade(#fff, 20%);
         font-size: 12px;
         &:focus,
         &:active {
             outline: none;
-            color: black;
+            color: #000;
         }
     }
     .navbar-brand {
-        font-weight: 700;
+      
         &:focus {
             outline: none;
-            color: black;
+
         }
     }
     a {
-        color: white;
+        color: #fff;
     }
     .nav {
         li {
             a {
                 transition: background .3s ease-in-out;
                 &:hover {
-                    color: fade(white, 80%);
+                    color: fade(#fff, 80%);
                     outline: none;
                     background-color: transparent;
                 }
@@ -43,9 +43,9 @@
             &.active {
                 outline: none;
                 a {
-                    background-color: fade(white, 20%);
+                    background-color: fade(#fff, 20%);
                     &:hover {
-                        color: white;
+                        color: #fff;
                     }
                 }
             }
@@ -67,14 +67,14 @@
 
 .intro {
     display: table;
-    max-width: 1200px;
+    max-width: @max-width;
     margin: 0 auto;
     width: 100%;
     height: auto;
     padding: 30% 0;
     text-align: center;
-    color: white;
-    background: url(../img/intro.jpg) no-repeat bottom center scroll;
+    color: #fff;
+    background: url(../img/backgrounds/intro.jpg) no-repeat bottom center scroll;
     background-color: #fff;
     background-size: cover;
     .intro-body {
@@ -112,10 +112,10 @@
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid white;
+    border: 2px solid #fff;
     border-radius: 100% !important;
     font-size: 40px;
-    color: white;
+    color: #fff;
     background: transparent;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -123,8 +123,8 @@
     &:hover,
     &:focus {
         outline: none;
-        color: white;
-        background: fade(white, 10%);
+        color: #fff;
+        background: fade(#fff, 10%);
     }
     i.animated {
         -webkit-transition-property: -webkit-transform;

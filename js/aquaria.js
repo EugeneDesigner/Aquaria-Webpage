@@ -40,7 +40,7 @@ function init() {
 
         zoom: 15,
         zoomControl: true,
-
+        scrollwheel: false,
 
 
         center: new google.maps.LatLng(59.3263, 18.0944),
