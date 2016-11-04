@@ -32,7 +32,7 @@ gulp.task('minify-css', ['less'], function() {
 });
 
   //Minify Bootstrap
- gulp.task('minify-bootstrap', function() {
+ /*gulp.task('minify-bootstrap', function() {
   return gulp.src('vendor/bootstrap/css/bootstrap.css')
       .pipe(rename({ suffix: '.min'}))
       .pipe(uncss({
@@ -42,7 +42,7 @@ gulp.task('minify-css', ['less'], function() {
       .pipe(browserSync.reload({
           stream: true
     }))
-});
+}); */
 
 // Minify JS
 gulp.task('minify-js', function() {
@@ -75,7 +75,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'minify-bootstrap']);
+gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -87,11 +87,12 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js', 'minify-bootstrap'], function() {
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
     gulp.watch('less/*.less', ['less']);
+    gulp.watch('less//sections/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
-    gulp.watch('vendor/bootstrap/css/bootstrap.css', ['minify-bootstrap']);
+    //gulp.watch('vendor/bootstrap/css/bootstrap.css', ['minify-bootstrap']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);

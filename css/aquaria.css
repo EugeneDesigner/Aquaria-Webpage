@@ -3,7 +3,7 @@
   margin: 0 auto;
   border-bottom: 1px solid rgba(1, 98, 151, 0.3);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(1, 98, 151, 0.7);
 }
 .navbar-custom .navbar-toggle {
   color: #fff;
@@ -162,6 +162,37 @@
     transform: scale(1);
   }
 }
+section .description__prime {
+  font-size: 1.3em;
+  text-align: justify;
+  padding-top: 50px;
+  color: #fff;
+}
+section .description__secondary {
+  font-size: 1em;
+  padding-top: 30px;
+  text-align: justify;
+}
+section .containter__title {
+  text-align: center;
+}
+section h1 {
+  border: 3px solid #fff;
+  display: inline-block;
+  padding: 20px;
+}
+section .description__know {
+  background-color: rgba(0, 136, 182, 0.8);
+  padding: 20px 30px 10px;
+  margin-top: 40px;
+  font-size: .7em;
+}
+section .description__know h4 {
+  text-align: left;
+}
+section .description__know p {
+  text-align: justify;
+}
 .content-section {
   margin: 0 auto;
   min-height: 700px;
@@ -209,34 +240,13 @@
   background: linear-gradient(rgba(55, 97, 9, 0.6), rgba(55, 97, 9, 0.6)), url(../img/backgrounds/aquaria.jpg) no-repeat center center scroll;
   background-size: cover;
 }
-.rainforest_red {
+.rainforest--red {
   background-color: rgba(255, 0, 0, 0.7);
 }
-.rainforest_orange {
+.rainforest--orange {
   background-color: rgba(250, 141, 29, 0.7);
 }
-.description-prime {
-  text-align: justify;
-  padding-top: 50px;
-  font-size: 1.5em;
-}
-.description-secondary {
-  font-size: 1.3em;
-  padding-top: 30px;
-  text-align: justify;
-}
-.description-know {
-  background-color: rgba(0, 136, 182, 0.8);
-  padding: 20px 30px 10px;
-  margin-top: 40px;
-}
-.description-know h4 {
-  text-align: left;
-}
-.description-know p {
-  text-align: justify;
-}
-.description-know p .rainforest_meter {
+.rainforest--meter {
   background: #fff;
   color: #000;
 }
@@ -244,7 +254,7 @@
   background: linear-gradient(rgba(26, 128, 233, 0.7), rgba(26, 128, 233, 0.7)), url(../img/backgrounds/shark.jpg) no-repeat center center scroll;
   background-size: cover;
 }
-.tropic-liters {
+.description__know--liters {
   background-color: black;
 }
 .opentime {
@@ -280,6 +290,7 @@
 }
 .opentime .ticket-button {
   text-align: center;
+  margin-bottom: 30px;
 }
 .ticket_category {
   background: rgba(181, 213, 255, 0.4);
@@ -295,12 +306,11 @@
 }
 .nordic h1 {
   text-align: right;
-  padding: 30px;
 }
-.nordic .description-know {
-  background-color: rgba(0, 0, 0, 0.5);
+.nordic .description__know {
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
-.nordic-romkorn {
+.nordic .description__know--romkorn {
   background-color: #fff;
   color: #000;
 }
@@ -338,7 +348,7 @@ body {
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #fff;
-  font-size: 16px;
+  font-size: 15px;
 }
 html {
   width: 100%;
@@ -358,19 +368,18 @@ h6 {
 }
 p {
   margin: 0 0 15px;
-  font-size: 1  em;
-  line-height: 1.5;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 @media (min-width: 768px) {
   p {
+    font-size: 1.3em;
     margin: 0 0 25px;
-    line-height: 1.6;
+    line-height: 1.7em;
   }
 }
 a {
   color: #42DCA3;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 a:hover,
